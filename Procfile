@@ -1,1 +1,1 @@
-jakmat-api: python3 api.py
+web: python3 api.py
