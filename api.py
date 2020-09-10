@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/api/v1/ephemerides', methods=['POST'])
+@app.route('/celestial-objects', methods=['POST'])
 def planets_all():
     object = request.args.get('object')
     timestamp = request.args.get('timestamp')
