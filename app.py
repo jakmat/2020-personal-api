@@ -13,12 +13,9 @@ def test_api():
 def planets_all():
     object = request.args.get('object')
     timestamp = request.args.get('timestamp')
-    # observable = perform_observation(object, timestamp)
-    # observation = jsonify(observable)
-    # print(observation)
-    # return observation
-    observation=[object, timestamp]
-    return jsonify(data=observation)
+    observable = perform_observation(object, timestamp)
+    observation = jsonify(observable)
+    return observation
 
 if __name__ == "__main__":
     app.run()
