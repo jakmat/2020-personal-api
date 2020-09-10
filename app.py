@@ -6,7 +6,7 @@ app = Flask(__name__)
 # CORS(app)
 
 @app.route('/test')
-def dummy_api():
+def test_api():
     return jsonify(data="This is a test")
 
 # @app.route('/celestial-objects', methods=['POST'])
