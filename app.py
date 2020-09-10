@@ -1,11 +1,12 @@
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
+# from flask import Flask, request, jsonify
 # from main import perform_observation
 # from flask_cors import CORS
 
 app = Flask(__name__)
 # CORS(app)
 
-@app.route('/test')
+@app.route('/')
 def test_api():
     return jsonify(data="This is a test")
 
@@ -18,7 +19,5 @@ def test_api():
 #     print(observation)
 #     return observation
 
-# if __name__ == "__main__":
-#     app.run()
-
-app.run()
+if __name__ == "__main__":
+    app.run()
