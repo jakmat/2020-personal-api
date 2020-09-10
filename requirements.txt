@@ -1,3 +1,4 @@
+#---boilerplate---
 click==7.1.2
 Flask==1.1.2
 itsdangerous==1.1.0
@@ -5,3 +6,15 @@ Jinja2==2.11.2
 MarkupSafe==1.1.1
 Werkzeug==1.0.1
 gunicorn==20.0.4
+#------------------
+certifi==2020.6.20
+DateTime==4.3
+Flask-Cors==3.0.8
+jplephem==2.14
+numpy==1.19.0
+pytz==2020.1
+sgp4==2.12
+six==1.15.0
+skyfield==1.22
+waitress==1.4.4
+zope.interface==5.1.0
