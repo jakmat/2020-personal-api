@@ -16,8 +16,9 @@ def planets_all():
     # observable = perform_observation(object, timestamp)
     # observation = jsonify(observable)
     # print(observation)
-    observation=[object, timestamp]
     return observation
+    observation=[object, timestamp]
+    return jsonify(data=observation)
 
 if __name__ == "__main__":
     app.run()
