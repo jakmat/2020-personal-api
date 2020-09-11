@@ -9,11 +9,12 @@ CORS(app)
 def test_api():
     return jsonify(data="This is a test")
 
-@app.route('/celestial-objects', methods=['POST'])
+@app.route('/celestial-objects', methods=['GET'])
 def planets_all():
-    object = request.args.get('object')
-    timestamp = request.args.get('timestamp')
-    observable = perform_observation(object, timestamp)
+    # object = request.args.get('object')
+    # timestamp = request.args.get('timestamp')
+    # observable = perform_observation(object, timestamp)
+    observable = perform_observation()
     observation = jsonify(observable)
     return observation
 
